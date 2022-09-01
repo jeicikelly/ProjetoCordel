@@ -1,0 +1,113 @@
+/*
+CORES:
+#C79C6F
+#7A5A38
+#2C667A
+#6FB0C7
+*/
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'BadScript';
+    src: url('../fontes/Bad_Script/BadScript-Regular.ttf') format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'RubikDirt';
+    src: url('../fontes/Rubik_Dirt/RubikDirt-Regular.ttf') format('opentype');
+    font-weight: normal;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100%;
+    background-color: #C79C6F;
+}
+
+
+header#titulo{
+    text-align: center;
+    background-color: #7A5A38;
+}
+header>h1{
+    color: black;
+    font-size: 7.8vw;
+    padding-top: 50px;
+    font-family: RubikDirt;
+    font-variant: small-caps;
+}
+header>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+}
+header>p>a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+header>p>a:hover{
+    text-decoration:underline;
+}
+header>p{
+    padding-bottom: 50px;
+    font-weight: bolder;
+}
+
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 50px;
+    font-family: BadScript;
+    font-weight: bolder;
+    font-size: 3vw;
+}
+section.normal{
+    background-color: white;
+}
+section.img{
+    background-color: #2C667A;
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.671);
+}
+section#img01{
+    background-image: url('../img/email.jpg');
+    background-position: center center;
+}
+section#img02{
+    background-image: url('../img/cartas.jpg');
+    background-position: left center;
+}
+section.img>p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.507);
+    text-shadow: 1.5px 1.5px 0 black;
+}
+section>p{
+    padding-bottom: 2em;
+}
+
+footer{
+    text-align: center;
+    background-color: #7A5A38;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+footer>p>a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+footer>p>a:hover{
+    text-decoration: underline;
+}
